@@ -1,0 +1,7 @@
+use hwscraper
+
+db.createCollection("scrapedData")
+
+db.scrapedData.find().pretty()
+
+db.scrapedData.find({"_id" : ObjectId("5bb02838ae8e026b5f2f012a")}).pretty()
